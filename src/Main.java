@@ -1,5 +1,9 @@
 public class Main {
 	public static void main(String[] args) {
-		System.out.println("Hello, World!");
+		int numIterations = 10000;
+		int numDice = 2;
+		GameSimulator simulator = new GameSimulator(numIterations, numDice);
+
+		simulator.runSimulation();
 	}
 }
