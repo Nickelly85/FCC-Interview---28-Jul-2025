@@ -25,6 +25,7 @@ public class GameSimulator {
 
 	public void printScoreStats() {
 		calculateStats();
+		System.out.println("Number of simulations was " + numIterations + " using " + numDice + " dice.");
 		for (int i = 0; i < scoreStats.length; i++) {
 			System.out.println("Score " + i + " occurs " + ((float) scoreStats[i] / numIterations) + " occurred " + scoreStats[i] + " times.");
 		}
